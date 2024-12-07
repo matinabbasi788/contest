@@ -1,1 +1,1 @@
-matrix
+f"{s[i] * i}", s[i:]

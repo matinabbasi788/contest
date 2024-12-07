@@ -1,3 +1,3 @@
-        # elif l[j][i] == '1' and (lh[k].count('1') == 2 \
-        #     or lh[k].count('1') == 3):
-        #         pass
+n = int(input())
+while n != 42:
+	print(n)

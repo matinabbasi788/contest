@@ -1,0 +1,6 @@
+n = int(input())
+a, b = map(int, input().split())
+c, d = map(int, input().split())
+common1 = set([a, c])
+common2 = set([b, d])
+print(len(common1) + len(common2))
