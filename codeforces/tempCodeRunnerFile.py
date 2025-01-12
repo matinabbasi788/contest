@@ -1,1 +1,2 @@
-f"{s[i] * i}", s[i:]
+        print("B", end="")
+        se
