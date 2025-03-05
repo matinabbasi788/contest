@@ -1,0 +1,5 @@
+n = int(input())
+s = input()
+cnt1 = s.count('1')
+cnt0 = s.count('0')
+print(max(cnt1, cnt0) - min(cnt1, cnt0))

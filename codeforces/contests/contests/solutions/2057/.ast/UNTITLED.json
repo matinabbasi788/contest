@@ -1,0 +1,1 @@
+{"need_compilation":false,"tests":[{"stdout":"4\n5\n6\n","stderr":"","group":"AssistantRed","time_taken":0.005,"input":"3\n1 3\n2 4\n5 3","output":"4\n5\n6","status":"KILLED"},{"output":"7","input":"1\n5 6"},[]],"src_name":"UNTITLED","src_ft":"cpp","src_ext":"cpp"}

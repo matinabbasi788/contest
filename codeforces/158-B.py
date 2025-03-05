@@ -1,8 +1,8 @@
 
 
+from collections import Counter
 n = int(input())
 a = list(map(int, input().split()))
-from collections import Counter
 
 count = Counter(a)
 taxis = count[4]  # Each group of 4 needs a separate taxi

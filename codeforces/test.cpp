@@ -1,41 +1,31 @@
-#include <algorithm>
 #include <iostream>
-#include <iterator>
-#include <string>
+#include <vector>
+#include <cmath>
+using namespace std;
+using ll = long long;
 
-void drawBoard(char *spaces);
-void playerMove(char *spaces, char player);
-void computerMove(char *spaces, char computer);
-bool checkWinner(char *spaces, char player, char computer);
-bool checkTie(char *spaces);
+void solve()
+{
+    ll n;
+    cin >> n;
+    if (n < 5)
+    {
+        cout << 0;
+        return;
+    }
 
-int main() {
-  char spaces[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
-  char player = 'X';
-  char computer = 'O';
-  bool running = true;
-  
-  drawBoard(spaces);
+    ll res = 0;
+    while (n >= 5)
+    {
+        n /= 5;
+        res += n;
+    }
 
-
-  return 0;
+    cout << res;
 }
 
-void drawBoard(char *spaces){
-  std::cout << "     |     |     " << '\n';
-  std::cout << "     |     |     " << '\n';
-  std::cout << "     |     |     " << '\n';
-
-}
-void playerMove(char *spaces, char player){
-
-}
-void computerMove(char *spaces, char computer){
-
-}
-bool checkWinner(char *spaces, char player, char computer){
-  return 0;
-}
-bool checkTie(char *spaces){
-  return 0;
+int main()
+{
+    solve();
+    return 0;
 }

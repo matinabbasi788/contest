@@ -1,5 +1,2 @@
-from time import sleep
-
-
-print("Hello World")
-sleep(10)
+a, b = map(int, input().split())
+print(a**b - b**a)

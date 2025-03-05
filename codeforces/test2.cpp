@@ -1,21 +1,27 @@
-#include <algorithm>
-#include <bits/stdc++.h>
-#include <cstdlib>
-
-
+#include <iostream>
 using namespace std;
-int main(){
-  vector<int> v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-  for(auto x : v){
-    cout << x << ' ';
-  }
-  cout << '\n';
-  random_shuffle(v.begin(), v.end());
-  for(auto x : v){
-    cout << x << ' ';
-  }
-  cout << '\n';
-  return 0;
-} 
 
+long long cnt = 0; // Global variable to count trailing zeros
 
+long long calculate(int num) {
+    while (num % 10 == 0) {
+        num = num / 10;
+        cnt++;
+    }
+    num = num % 100;
+    return num;
+}
+
+int main() {
+    long long n;
+    cin >> n;
+
+    long long f = 1;
+    for (long long i = 1; i <= n; i++) {
+        f = f * i;
+        f = calculate(f);
+    }
+
+    cout << cnt << endl;
+    return 0;
+}
