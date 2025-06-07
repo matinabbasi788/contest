@@ -1,3 +1,6 @@
 [submodule "notebooks/sharificpc"]
 	path = notebooks/sharificpc
 	url = git@github.com:seyedparsa/sharificpc.git
+[submodule "notebooks/ICPC-Notebook"]
+	path = notebooks/ICPC-Notebook
+	url = git@github.com:matinabbasi788/ICPC-Notebook.git
