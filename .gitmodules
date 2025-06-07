@@ -1,0 +1,3 @@
+[submodule "notebooks/sharificpc"]
+	path = notebooks/sharificpc
+	url = git@github.com:seyedparsa/sharificpc.git
